@@ -5,6 +5,8 @@ var cors = require('cors')
 
 app.use(cors());
 
+var port = process.env.PORT || 8080;
+
 const PAGE_LENGTH = 20;
 
 const COMPANIES = [
@@ -65,9 +67,8 @@ app.get('/api/getdata', function(req, res) {
   res.send({ data });
 });
 
-var server = app.listen(8080, function() {
-  var host = server.address().address;
-  var port = server.address().port;
+var server = app.listen(port, function() {
+  var host = server.address().address;  
 
-  console.log('Example app listening at http://%s:%s', host, port);
+  console.log('Quant Edge demo app listening at http://%s:%s', host, port);
 });
