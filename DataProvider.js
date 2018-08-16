@@ -16,7 +16,7 @@ const COMPANIES = [
  * Returns a random number between min (inclusive) and max (exclusive)
  */
 function getRandomArbitrary(min, max) {
-  return Math.random() * (max - min) + min;
+  return Math.round((Math.random() * (max - min) + min) * 100) / 100;
 }
 
 function getRandomInteger(min, max) {
