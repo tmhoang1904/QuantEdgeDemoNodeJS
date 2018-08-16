@@ -5,13 +5,18 @@
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "lodash": "^4.17.10",
+    "morgan": "^1.9.0",
     "multer": "^1.3.1"
   },
   "name": "quantedgedemoserver",
   "version": "1.0.0",
   "description": "Quant Edge demo nodejs server",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
